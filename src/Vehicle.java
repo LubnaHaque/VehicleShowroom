@@ -2,14 +2,14 @@
 public abstract class Vehicle {
 	
 	protected VehicleType vehicleType;
-	protected int modelNumber;
+	protected String modelNumber;
 	
 	protected EngineType engineType;
 	protected int enginePower;
 	protected int tireSize;
 	
 	
-	public Vehicle(VehicleType vehicleType, int modelNumber, EngineType engineType, int enginePower, int tireSize) {
+	public Vehicle(VehicleType vehicleType, String modelNumber, EngineType engineType, int enginePower, int tireSize) {
 		super();
 		this.vehicleType = vehicleType;
 		this.modelNumber = modelNumber;
@@ -19,8 +19,6 @@ public abstract class Vehicle {
 	}
 	
 	
-	public abstract void run();
-	public abstract String getName();
 	public abstract String getDetails();
 	
 	
@@ -30,10 +28,10 @@ public abstract class Vehicle {
 	public void setVehicleType(VehicleType vehicleType) {
 		this.vehicleType = vehicleType;
 	}
-	public int getModelNumber() {
+	public String getModelNumber() {
 		return modelNumber;
 	}
-	public void setModelNumber(int modelNumber) {
+	public void setModelNumber(String modelNumber) {
 		this.modelNumber = modelNumber;
 	}
 	public EngineType getEngineType() {
